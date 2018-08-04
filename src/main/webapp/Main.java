@@ -26,7 +26,7 @@ public class Main {
         jerseyServlet.setInitParameter(ServerProperties.PROVIDER_CLASSNAMES, MultiPartFeature.class.getCanonicalName());
         
         //package de teste
-        jerseyServlet.setInitParameter(ServerProperties.PROVIDER_PACKAGES, "test");
+        //jerseyServlet.setInitParameter(ServerProperties.PROVIDER_PACKAGES, "test");
         
         try {
             jettyServer.start();

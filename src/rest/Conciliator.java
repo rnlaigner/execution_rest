@@ -85,12 +85,10 @@ public class Conciliator
         } 
 		catch (KettleException e) 
 		{
-            // TODO Auto-generated catch block
             e.printStackTrace();
             return Response.status(502).entity("Exception : " + e.getMessage()).build();
         } 
 		catch (IOException e) {
-			// TODO Auto-generated catch block
         	e.printStackTrace();
             return Response.status(502).entity("Exception : " + e.getMessage()).build();
 		}

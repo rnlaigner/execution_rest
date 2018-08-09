@@ -21,12 +21,8 @@ public class Main {
         jerseyServlet.setInitOrder(0);
 
         // Tells the Jersey Servlet which REST service/class to load.
-        //jerseyServlet.setInitParameter("jersey.config.server.provider.packages", "rest");
         jerseyServlet.setInitParameter(ServerProperties.PROVIDER_PACKAGES, "rest");
         jerseyServlet.setInitParameter(ServerProperties.PROVIDER_CLASSNAMES, MultiPartFeature.class.getCanonicalName());
-        
-        //package de teste
-        //jerseyServlet.setInitParameter(ServerProperties.PROVIDER_PACKAGES, "test");
         
         try {
             jettyServer.start();
